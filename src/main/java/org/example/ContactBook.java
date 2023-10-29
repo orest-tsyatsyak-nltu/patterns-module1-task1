@@ -27,11 +27,6 @@ public class ContactBook {
     }
 
     // Delegation !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    public void changeAddressForPerson(String personFullName, Address newAddress) {
-        personNameToItsAddress.put(personFullName, newAddress);
-    }
-
-    // Delegation !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     public Stream<Map.Entry<String, Address>> stream() {
         return personNameToItsAddress.entrySet().stream();
     }
